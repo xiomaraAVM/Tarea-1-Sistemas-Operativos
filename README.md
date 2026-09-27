@@ -1,6 +1,6 @@
 # Planificador Dieciochero (Sistemas Operativos)
 
-Este proyecto es un planificador de tareas y actividades en C con soporte para concurrencia de K procesos simultáneos, manejo de dependencias mediante gráficos dirigidos acyclicos (DAG) e intercomunicación mediante tuberías (*pipes*).
+Este proyecto es un planificador de tareas y actividades en C con soporte para concurrencia de K procesos simultáneos, manejo de dependencias mediante gráficos dirigidos acyclicos (DAG)
 
 ## Requisitos
 
