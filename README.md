@@ -23,7 +23,7 @@ Este proyecto es un planificador de tareas y actividades en C con soporte para c
 * **`plan.txt`**: Archivo de entrada con las actividades y sus dependencias (se consideraron 17 actividades como base, pero debe cumplir para las 10000).
 * **`README.md`**: Documentación del proyecto.
 
-* Adicionalmente, se creará un archivo planificador.log para el registro formal de la ejecución de la aplicación
+* Adicionalmente, se crea un archivo planificador.log para el registro formal de la ejecución de la aplicación (este puede ser eliminado en la limpieza mediante rm)
 ## Ejecutar
 
 make
