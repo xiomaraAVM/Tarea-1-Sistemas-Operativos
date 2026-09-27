@@ -1,0 +1,17 @@
+1 : comprar_carbon : 1500 :
+2 : comprar_carne : 2000 :
+3 : comprar_bebidas : 1200 :
+4 : comprar_empanadas : 1800 :
+5 : comprar_pan : 900 :
+6 : comprar_verduras : 1000 :
+7 : comprar_volantin : 700 :
+8 : limpiar_parrilla : 600 :
+9 : prender_carbon : 500 : 1, 8
+10 : sazonar_carne : 400 : 2
+11 : asar_carne: 3000 : 9, 10
+12 : hornear_empanadas: 2500 : 4
+13 : picar_verduras : 800 : 6
+14 : preparar_pebre : 700 :13
+15 : preparar_terremoto : 600 : 3
+16 : poner_mesa : 400 : 5, 11, 12, 14, 15
+17 : elevar_volantines : 1000 : 7
