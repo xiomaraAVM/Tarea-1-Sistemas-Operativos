@@ -9,12 +9,10 @@ Este proyecto es un planificador de tareas y actividades en C con soporte para c
 * Sistema operativo basado en POSIX (Se usó Ubuntu para esta tarea).
 
 ##Funciones
-* **`cargar_plan(const char *ruta, Nodo **out_nodos, int *out_n)`**: Parsea el archivo de entrada (`plan.txt`), extrae las dependencias de cada actividad e inicializa las estructuras del grafo.
+* **`cargar_plan(...)`**: Obtiene el archivo de entrada (`plan.txt`), extrae las dependencias de cada actividad e inicializa las estructuras del grafo.
 * **`hash_iniciar` / `hash_buscar` / `hash_insertar`**: Implementan una tabla Hash para mapear los IDs alfanuméricos de las actividades a sus índices numéricos en $O(1)$.
-* **`lanzar_actividad(Nodo *nodo)`**: Crea un nuevo proceso hijo mediante `fork()` y establece las tuberías de comunicación (`pipe`) de entrada/salida para la actividad.
-* **`procesar_finalizacion(...)`**: Lee la salida del proceso hijo, evalúa si la ejecución fue exitosa o fallida, actualiza el estado de las dependencias e ingresa las nuevas actividades listas a la cola.
-* **`abortar_rama(int idx_fallido, int *completados_terminal)`**: Implementa una búsqueda por profundidad (DFS) para marcar como `ABORTADA` únicamente la rama de actividades que dependen (directa o indirectamente) de una actividad fallida, permitiendo que las ramas independientes continúen.
-* **`instalar_manejador_sigint()` / `abortar_todo()`**: Captura la señal `SIGINT` (Ctrl+C) para terminar de forma ordenada todos los procesos en ejecución mediante `SIGTERM`.
+* **`abortar_rama(...)`**: Implementa una búsqueda para marcar como `ABORTADA` únicamente la rama de actividades que dependen (directa o indirectamente) de una actividad fallida, permitiendo que las ramas independientes continúen.
+* ** `abortar_todo()`**: Captura la señal `SIGINT` (Ctrl+C) para terminar de forma ordenada todos los procesos en ejecución mediante `SIGTERM`.
 
 ##Formato
 
